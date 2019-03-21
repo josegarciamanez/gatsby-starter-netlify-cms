@@ -37,8 +37,7 @@ const Navbar = class extends React.Component {
       <nav
         className="navbar is-transparent"
         role="navigation"
-        aria-label="main-navigation"
-      >
+        aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
@@ -48,8 +47,7 @@ const Navbar = class extends React.Component {
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
+              onClick={() => this.toggleHamburger()}>
               <span />
               <span />
               <span />
@@ -57,20 +55,19 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+            className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
                 About
               </Link>
               <Link className="navbar-item" to="/products">
-                Products
+                Productos
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                Contacto
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
@@ -81,8 +78,7 @@ const Navbar = class extends React.Component {
                 className="navbar-item"
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
